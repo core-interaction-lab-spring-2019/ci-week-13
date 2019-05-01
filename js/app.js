@@ -2,12 +2,11 @@ window.addEventListener('load', ()=> {
 
 	let long;
 	let lat;
-
 	let description = document.querySelector('.current-description');
 	let degrees = document.querySelector('.current-temp');
 	let timezone = document.querySelector('.location__timezone');
 	let body = document.querySelector('body');
-	
+
 	if(navigator.geolocation) {
 
 		navigator.geolocation.getCurrentPosition(position => {
@@ -38,8 +37,6 @@ window.addEventListener('load', ()=> {
 					body.classList.add(icon);
 
 				});
-
 		});
-
 	}
 });
