@@ -60,50 +60,44 @@ body {
   font-size: 40px;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
 
 .page-title {
+  width: 100%;
+  text-align: center;
   font-size: 80px;
   margin-bottom: 40px; }
 
+.location {
+  width: 100%; }
+
 .location,
 .temp {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
   margin: 40px 0; }
 
-.temp {
-  flex-direction: column; }
-  .temp__degrees {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center; }
-  .temp h2 {
-    width: 100%; }
-  .temp__value {
-    font-size: 40px; }
-  .temp__f {
-    margin: 10px;
-    font-size: 30px; }
+.column {
+  text-align: center; }
+
+.temp__degrees {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center; }
+.temp h2 {
+  width: 100%; }
+.temp__value {
+  font-size: 34px; }
+.temp__f {
+  font-size: 30px; }
+.temp__description {
+  font-size: 34px; }
 
 .label {
   width: 100%;
   margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
-
-
-body.clear-night {
-  background-image: url(../images/clear-night.jpg);
-}
