@@ -62,7 +62,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .page-title {
   font-size: 80px;
@@ -98,3 +102,8 @@ body {
   margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+body.clear-night {
+  background-image: url(../images/clear-night.jpg);
+}
