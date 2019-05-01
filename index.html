@@ -19,27 +19,44 @@
 	</head>
 	<body>
 		<div class="page-title">Weather App</div>
-		<div class="animated-icon">Icon</div>
+
 		<div class="location">
 			<div class="label">Location:</div>
 			<h1 class="location__timezone"></h1>
 		</div>
-		<div class="temp">
-			<div class="temp__degrees">
-				<div class="label">Temperature:</div>
-				<h2>
-					<span class="temp__value"></span>
-					<span class="temp__f">F</span>
-				</h2>
+		<div class="column">
+			<h2>Currently:</h2>
+			<div class="temp">
+				<div class="temp__degrees">
+					<div class="label">Temperature:</div>
+					<h2>
+						<span class="temp__value current-temp"></span>
+						<span class="temp__f">F</span>
+					</h2>
+				</div>
+			</div>
+			<div class="temp">
+				<div class="label">Conditions:</div>
+				<div class="temp__description current-description"></div>
 			</div>
 		</div>
-		<div class="temp">
-			<div class="label">Conditions:</div>
-			<div class="temp__description">
+		<div class="column">
+			<h2>Tomorrow:</h2>
+			<div class="temp">
+				<div class="temp__degrees">
+					<div class="label">Temperature:</div>
+					<h2>
+						<span class="temp__value forecast-temp"></span>
+						<span class="temp__f">F</span>
+					</h2>
+				</div>
+			</div>
+			<div class="temp">
+				<div class="label">Conditions:</div>
+				<div class="temp__description forecast-description"></div>
 			</div>
 		</div>
 
-		<script src="js/skycons.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>
